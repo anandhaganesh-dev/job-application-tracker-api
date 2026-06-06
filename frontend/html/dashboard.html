@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Job Dashboard</h1>
+
+        <div>
+            <button id="logoutBtn">
+                Logout
+            </button>
+            <p id="userInfo"></p>
+        </div>
+
+        <h2>Add Job</h2>
+
+        <div class="card">
+            <form id="job-form">
+
+                <input type="text" id="company" placeholder="Company" required>
+
+                <br><br>
+
+                <input type="text" id="role" placeholder="Role" required>
+
+                <br><br>
+
+                <select id="status">
+
+                    <option value="APPLIED">
+                        Applied
+                    </option>
+
+                    <option value="INTERVIEW">
+                        Interview
+                    </option>
+
+                    <option value="OFFER">
+                        Offer
+                    </option>
+
+                    <option value="REJECTED">
+                        Rejected
+                    </option>
+
+                </select>
+
+                <br><br>
+
+                <button type="submit">
+                    Add Job
+                </button>
+
+            </form>
+        </div>
+
+        <p id="message"></p>
+
+        <hr>
+
+        <div>
+            <h2>My Jobs</h2>
+
+            <select id="filter-status">
+
+                <option value="">
+                    All
+                </option>
+
+                <option value="APPLIED">
+                    Applied
+                </option>
+
+                <option value="INTERVIEW">
+                    Interview
+                </option>
+
+                <option value="OFFER">
+                    Offer
+                </option>
+
+                <option value="REJECTED">
+                    Rejected
+                </option>
+
+            </select>
+            <ul id="jobs-list">
+
+            </ul>
+        </div>
+    </div>
+    <script src="../js/api.js"></script>
+    <script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>

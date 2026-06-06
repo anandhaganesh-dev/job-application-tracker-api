@@ -37,9 +37,9 @@ pip install -r requirements.txt
 pytest # test the routes 
 
 ### 4. Configure environment variables
-cp .env.example .env
+cp .env.example .env #Windows: copy .env.example .env 
 
-Update values inside .env
+# update values inside .env
 
 ### 5. Run the server
 uvicorn app.main:app --reload
